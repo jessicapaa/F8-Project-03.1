@@ -123,6 +123,7 @@ a {
     display: flex;
 }
 .hero__content {
+    margin-top: 10.3rem;
     width: 43%;
     flex-shrink: 0;
 }
@@ -198,4 +199,45 @@ a {
 .header-hero__play-button:hover .header-hero__play-btn {
     background-color: var(--primary-color);
     transform: rotate(-135deg);
+}
+.hero__media {
+    position: relative;
+}
+.hero__img {
+    width: 20.2rem;
+    height: 46.6rem;
+    object-fit: cover;
+    border-radius: 11rem;
+}
+
+.hero__group__imgs {
+    display: flex;
+    column-gap: 20px;
+}
+
+.hero__img:nth-child(2) {
+    margin-top: 77px;
+}
+.hero__img__bg {
+    z-index: -1;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background-color: #4dbb9a;
+    filter: blur(137px);
+}
+.hero__decor:first-child {
+    position: absolute;
+    top: 0;
+    left: -273px;
+}
+
+.hero__decor:last-child {
+    rotate: 180deg;
+    position: absolute;
+    bottom: -45.6px;
+    left: 32px;
 }
